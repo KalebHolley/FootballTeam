@@ -34,4 +34,18 @@ public class FootballTeam {
     public void setTeamname(String Teamname) {
         this.Teamname = Teamname;
     }
+    
+    public int getNumFootballPlayer(){
+        return this.players.size();
+    }
+    
+    public FootballPlayer getFootballPlayer(int index){
+        return this.players.get(index);
+    }
+    public void setFootballPlayer(int index,FootballPlayer item){
+        this.players.add(index, item);
+    }
+    public void addFootballPlayer(FootballPlayer item){
+        this.players.add(item);
+    }
 }
