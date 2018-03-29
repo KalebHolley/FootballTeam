@@ -48,4 +48,40 @@ public class FootballTeam {
     public void addFootballPlayer(FootballPlayer item){
         this.players.add(item);
     }
+    
+    /**
+     loads in player data from txt file
+     */
+    public void loadPlayerData(String inputFileName){
+    
+    }
+    /**
+    saves player data to txt file     
+    */
+    public void savePlayerData(String outputFileName){
+    
+    } 
+    /**
+     outputs roster in string format
+     */
+    public String rosterToString(){
+        String output ="";
+        return output;
+    }
+    /**
+     outputs offensive roster in string format
+     */
+    public String offensiveRosterToString(){
+        String output ="";
+        return output;
+    }
+    /**
+     outputs defensive roster in string format
+     */
+    public String defensiveRosterToString(){
+        String output ="";
+        return output;
+    }
+
+
 }
