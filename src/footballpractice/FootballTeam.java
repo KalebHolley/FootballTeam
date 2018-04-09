@@ -6,6 +6,7 @@
 package footballpractice;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 /**
  *
@@ -53,7 +54,11 @@ public class FootballTeam {
      loads in player data from txt file
      */
     public void loadPlayerData(String inputFileName){
-    
+        Scanner scanner = new Scanner(inputFileName);
+        while (scanner.hasNext()){
+            System.out.println(scanner.next());
+        
+        }
     }
     /**
     saves player data to txt file     
