@@ -5,6 +5,9 @@
  */
 package footballpractice;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+
 /**
  *
  * @author kalebholley
@@ -14,9 +17,11 @@ public class FootballPractice {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FileNotFoundException {
         // TODO code application logic here
-        System.out.println("Kaleb");
+        //Test if load function works
+        FootballTeam packers = new FootballTeam();
+        packers.loadPlayerData("/Users/kalebholley/NetBeansProjects/FootballPractice/src/footballpractice/footballTeamIn.txt");
     }
     
 }
